@@ -41,6 +41,31 @@ mobileQuery.addEventListener('change', closeMenu);
 // Without JavaScript, navigation remains visible and native FAQ controls still work.
 document.documentElement.classList.add('js');
 
+// Inline previews paint immediately; image loading never blocks scroll reveals.
+function initScreenshotLoading() {
+  document.querySelectorAll('.screenshot').forEach(frame => {
+    const image = frame.querySelector('img');
+    const showImage = async () => {
+      try {
+        if (image.decode) await image.decode();
+      } catch {
+        // A loaded image can still be shown if asynchronous decoding is unavailable.
+      }
+      frame.classList.remove('is-loading', 'has-error');
+    };
+    const showFallback = () => {
+      frame.classList.remove('is-loading');
+      frame.classList.add('has-error');
+    };
+
+    image.addEventListener('load', showImage);
+    image.addEventListener('error', showFallback);
+    if (!image.complete) frame.classList.add('is-loading');
+    else if (image.naturalWidth > 0) showImage();
+    else showFallback();
+  });
+}
+
 // Reveal upcoming content once, without hiding anything when motion is disabled.
 function initScrollReveal() {
   const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
@@ -94,4 +119,5 @@ function initScrollReveal() {
   });
 }
 
+initScreenshotLoading();
 initScrollReveal();
