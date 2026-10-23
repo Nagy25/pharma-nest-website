@@ -1394,6 +1394,39 @@ details p {
   }
 }
 
+/* Gentle, one-time entrance matching the reference's 24px upward reveal. */
+.scroll-reveal {
+  opacity:1;
+  translate:0 0;
+  transition:opacity 650ms cubic-bezier(.22,1,.36,1),translate 650ms cubic-bezier(.22,1,.36,1);
+  transition-delay:var(--reveal-delay,0ms);
+}
+.scroll-reveal.is-pending {
+  opacity:0;
+  translate:0 24px;
+}
+.scroll-reveal:focus-within {
+  opacity:1;
+  translate:none;
+  transition:none;
+}
+@media(prefers-reduced-motion:reduce) {
+  .scroll-reveal,
+  .scroll-reveal.is-pending {
+    opacity:1;
+    translate:none;
+    transition:none;
+  }
+}
+@media print {
+  .scroll-reveal,
+  .scroll-reveal.is-pending {
+    opacity:1;
+    translate:none;
+    transition:none;
+  }
+}
+
 /* Both supplied inventory/report screenshots share the existing feature frame. */
 .feature-screens-pair {
   justify-content:center;

@@ -40,3 +40,58 @@ document.addEventListener('click', event => {
 mobileQuery.addEventListener('change', closeMenu);
 // Without JavaScript, navigation remains visible and native FAQ controls still work.
 document.documentElement.classList.add('js');
+
+// Reveal upcoming content once, without hiding anything when motion is disabled.
+function initScrollReveal() {
+  const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (motionPreference.matches || !('IntersectionObserver' in window)) return;
+
+  const targets = document.querySelectorAll([
+    '.section-heading', '.showcase', '.feature-card', '.shortages-copy',
+    '.shortage-gallery > figure', '.steps > article', '.setup-note',
+    '.faq-intro', '.faq-list', '.trial-section', '.download-section',
+  ].join(', '));
+
+  const reveal = target => {
+    target.classList.remove('is-pending');
+    observer.unobserve(target);
+  };
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) reveal(entry.target);
+    });
+  }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
+
+  document.querySelectorAll('.feature-grid, .shortage-gallery, .steps').forEach(group => {
+    Array.from(group.children).forEach((child, index) => {
+      child.style.setProperty('--reveal-delay', `${Math.min(index, 2) * 80}ms`);
+    });
+  });
+
+  try {
+    targets.forEach(target => {
+      // Keep the initial viewport and content above a direct anchor visible.
+      if (target.getBoundingClientRect().top < window.innerHeight - 32) return;
+      observer.observe(target);
+      target.classList.add('scroll-reveal', 'is-pending');
+    });
+  } catch {
+    targets.forEach(target => target.classList.remove('is-pending'));
+    observer.disconnect();
+    return;
+  }
+
+  // Keyboard focus must never land inside visually hidden content.
+  document.addEventListener('focusin', event => {
+    const target = event.target.closest('.scroll-reveal.is-pending');
+    if (target) reveal(target);
+  });
+
+  motionPreference.addEventListener('change', event => {
+    if (!event.matches) return;
+    targets.forEach(reveal);
+    observer.disconnect();
+  });
+}
+
+initScrollReveal();

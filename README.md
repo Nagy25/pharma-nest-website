@@ -29,4 +29,6 @@ Open http://127.0.0.1:8080. You can also open `index.html` directly.
 ## Shortage report section
 
 The `#shortages` section explains coverage-based quantities, the best recorded discount from historical purchase invoices, per-supplier baskets, PDF/Excel sharing through the system share sheet, and tracking sent/overdue/received quantities. Sharing is user-initiated; the website does not send orders. The three `shortage-*-private.png` screens come from the user attachments (10:15–10:17). The built-in image editing tool applies narrow privacy blurs to the pharmacy header, a personal name in an overdue notice, and the draft creator username; supplier company names stay visible. Prompt: blur only the specified personal-name region, preserve all remaining screenshot content and full portrait framing.
-# pharma-nest-website
+## Scroll entrance motion
+
+Upcoming section headings, feature cards and app screenshots fade in and rise 24px once when entering the viewport. Siblings stagger by up to 160ms. The effect uses native IntersectionObserver and CSS, with no dependencies. Initial visible content, reduced-motion preferences, unsupported browsers, JavaScript-disabled viewing, keyboard focus and printing keep content accessible. Timing and distance are in `.scroll-reveal` in `styles.css`; targets and stagger are in `initScrollReveal()` in `script.js`.
