@@ -2,7 +2,7 @@
 
 // Update contact and store destinations here. No keys or services are needed.
 const SITE_CONFIG = Object.freeze({
-  whatsappNumber: '201207511334',
+  whatsappNumber: '201275729853',
   trialMessage: 'مرحبًا، مهتم بتجربة Pharma Nest مجانًا لمدة ١٤ يوم. ممكن أعرف تفاصيل التفعيل؟',
   android: 'https://play.google.com/store/apps/details?id=com.pharmaNest.smarttech.app.pharma_nest',
   ios: 'https://apps.apple.com/eg/app/pharma-nest/id6823165189',
