@@ -1,112 +1,211 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for the Pharma Nest mobile application.">
+  <meta name="theme-color" content="#5a9f86">
+  <meta name="description" content="Pharma Nest Privacy Policy: how we handle account information, pharmacy records, notifications and crash reports, and how to request access or deletion. Available in English and Arabic.">
   <title>Privacy Policy | Pharma Nest</title>
-  <style>
-    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    body { margin: 0; color: #193333; background: #f6faf9; line-height: 1.7; }
-    main { max-width: 800px; margin: 0 auto; padding: 32px 20px 64px; }
-    header, section { background: #fff; border: 1px solid #dae9e6; border-radius: 14px; padding: 24px; margin-bottom: 16px; }
-    h1, h2 { color: #005454; line-height: 1.3; }
-    h1 { margin: 0 0 8px; }
-    h2 { margin-top: 0; font-size: 1.25rem; }
-    p, ul { margin: 0 0 12px; }
-    p:last-child, ul:last-child { margin-bottom: 0; }
-    a { color: #006b68; overflow-wrap: anywhere; }
-    .meta { color: #506664; }
-    .language-links { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 14px; }
-    .language { margin-top: 32px; }
-    [lang="ar"] { font-family: Tahoma, Arial, sans-serif; }
-    @media (max-width: 560px) { header, section { padding: 18px; } main { padding: 16px 12px 40px; } }
-  </style>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="preload" href="assets/fonts/Cairo-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=20261023-images1">
+  <link rel="stylesheet" href="privacy.css?v=20261024-policy2">
 </head>
-<body>
-<main>
-  <header>
-    <h1>Pharma Nest Privacy Policy</h1>
-    <p class="meta">Effective date: 15 October 2026</p>
-    <p>Pharma Nest is a mobile application for authorized pharmacy staff to view pharmacy operations and manage replenishment orders. This policy explains how information is handled in the Android and iOS app.</p>
-    <nav class="language-links" aria-label="Policy languages">
-      <a href="#english">English</a>
-      <a href="#arabic" lang="ar">العربية</a>
+<body class="privacy-page">
+<a class="skip-link" href="#main">Skip to policy / انتقل إلى السياسة</a>
+<header class="policy-nav">
+  <div class="container policy-nav-inner">
+    <a class="brand" href="index.html" aria-label="Pharma Nest home"><img src="assets/logo.png" width="42" height="42" alt=""><span dir="ltr">Pharma Nest<span class="brand-dot">.</span></span></a>
+    <nav class="policy-language-links" aria-label="Choose policy language">
+      <a href="#english" lang="en" hreflang="en">English</a>
+      <a href="#arabic" lang="ar" hreflang="ar" dir="rtl">العربية</a>
     </nav>
-  </header>
-
-  <div id="english" class="language">
-    <section>
-      <h2>Information we handle</h2>
-      <ul>
-        <li><strong>Account information:</strong> The phone number associated with your provisioned account, your password when signing in, your account ID, and the pharmacy linked to your account. The app converts the phone number to an internal login identifier for Supabase Authentication. Passwords are sent to the authentication service for verification; this policy does not claim that we can read your password.</li>
-        <li><strong>Pharmacy information:</strong> Inventory and expiry batches, suppliers, shifts, sales and purchase invoices, sales reports, and replenishment orders. Orders may include an optional recipient phone number, supplier, item and quantity details, follow-up dates, receipt notes, and the account ID of the staff member who created them. Some records originate in the pharmacy's existing system and are synchronized to the service used by the app.</li>
-        <li><strong>Notifications:</strong> If notifications are enabled, the app obtains a device push token and stores it with your account, pharmacy, and device platform so relevant notifications can be delivered. A registration secret is stored securely on the device to revoke the token later. Google Firebase Cloud Messaging and the device platform's push service process notification delivery.</li>
-        <li><strong>Device preferences and technical data:</strong> Theme and notification preferences are stored on your device. Authentication sessions and push registration details are stored on your device. Network and service providers may process technical information such as IP address, device identifiers, and request metadata needed to operate and secure the service.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>How we use information</h2>
-      <p>We use this information to authenticate and authorize pharmacy staff, display pharmacy records, create and manage replenishment orders, deliver requested notifications, maintain security, troubleshoot problems, and operate the app. The app currently does not include advertising or third-party analytics SDKs, and we do not sell personal information.</p>
-    </section>
-    <section>
-      <h2>Service providers and sharing</h2>
-      <p>Supabase provides authentication and database services. Google Firebase Cloud Messaging, together with Apple or Android push infrastructure, supports notifications. These providers process data needed to provide those services. Pharmacy information is available to authorized staff for the relevant pharmacy, subject to access controls.</p>
-      <p>When you choose to export and share an order as a PDF or spreadsheet, the app opens your device's share sheet. The selected recipient or external app receives the information you choose to share and applies its own privacy practices. We may also disclose information when required by law or to protect the service and its users.</p>
-    </section>
-    <section>
-      <h2>Storage, security, and retention</h2>
-      <p>App connections to Supabase use HTTPS. Access to pharmacy records is restricted by authenticated account and pharmacy membership. Device push registration secrets are kept in secure device storage. No system is perfectly secure.</p>
-      <p>We keep account and pharmacy records for as long as needed to operate the pharmacy service and meet applicable recordkeeping obligations. Notification registrations are revoked when notifications are disabled or you sign out, subject to network availability; inactive registrations may also be cleaned up by the server. Deletion from backups may follow the backup retention cycle. We do not state a fixed retention period because the pharmacy's operational and legal requirements can vary.</p>
-    </section>
-    <section>
-      <h2>Your choices and requests</h2>
-      <p>You can turn notifications off in the app's settings or your device settings. You can sign out of the app. Accounts are provisioned for authorized pharmacy staff; the app does not provide public account registration. To request access, correction, or deletion of your account or personal information, email <a href="mailto:ahmednagyhero25@gmail.com">ahmednagyhero25@gmail.com</a>. Please identify the phone number associated with your account without sending your password. We will verify your request and handle it subject to applicable legal and pharmacy recordkeeping requirements. If the account is managed by your pharmacy, we may need to coordinate with its administrator.</p>
-    </section>
-    <section>
-      <h2>Children, changes, and contact</h2>
-      <p>The app is intended for authorized pharmacy staff, not children. We may update this policy when the app or its data practices change. The effective date above will be updated when we do. For privacy questions or requests, contact Pharma Nest at <a href="mailto:ahmednagyhero25@gmail.com">ahmednagyhero25@gmail.com</a>.</p>
-    </section>
+    <a class="policy-home" href="index.html">Back to home <span aria-hidden="true">↗</span></a>
   </div>
+</header>
+<main id="main">
+  <section class="container policy-language" id="english" lang="en" dir="ltr" aria-labelledby="english-title">
+    <div class="policy-language-heading"><div><span class="eyebrow">ENGLISH</span><h1 id="english-title">Pharma Nest Privacy Policy</h1></div><a href="#arabic" lang="ar" dir="rtl">اقرأ بالعربية <span aria-hidden="true">↓</span></a></div>
+    <div class="policy-grid">
+      <aside class="policy-toc" aria-label="English policy contents">
+        <p>On this page</p>
+        <ol>
+          <li><a href="#en-about">About this policy</a></li>
+          <li><a href="#en-information">Information we handle</a></li>
+          <li><a href="#en-use">How we use it</a></li>
+          <li><a href="#en-sharing">Who receives it</a></li>
+          <li><a href="#en-security">Storage and protection</a></li>
+          <li><a href="#en-retention">How long we keep it</a></li>
+          <li><a href="#en-choices">Your choices</a></li>
+          <li><a class="policy-delete-link" href="#delete-account">Account and data deletion</a></li>
+          <li><a href="#en-children">Children’s privacy</a></li>
+          <li><a href="#en-contact">Updates and contact</a></li>
+        </ol>
+      </aside>
+      <article class="policy-paper" aria-labelledby="english-title">
+        <section id="en-about">
+          <h3>01. About this policy</h3>
+          <p>Pharma Nest is for authorized pharmacy staff to view pharmacy operations and manage supplier orders. This policy covers information handled through the Android and iPhone apps and the services that support them.</p>
+          <p>Accounts are arranged for authorized users; the app does not offer public account registration. Information may be provided by you, by your pharmacy’s administrator, or through your pharmacy’s existing business records.</p>
+        </section>
+        <section id="en-information">
+          <h3>02. Information we handle</h3>
+          <ul>
+            <li><strong>Account information:</strong> Your username or phone number, sign-in details, account identifier, and the pharmacy associated with your account. Your password is used to verify your sign-in.</li>
+            <li><strong>Pharmacy records:</strong> Stock and expiry information, suppliers, shifts, sales and purchase invoices, reports, and supplier orders. Orders can include quantities, an optional recipient phone number, expected arrival dates, receipt notes, and which staff member created or sent the order. Records can be transferred from your pharmacy’s existing system.</li>
+            <li><strong>Notification information:</strong> When notifications are enabled, information identifying the app installation and device platform is associated with your account and pharmacy so relevant messages can reach your device.</li>
+            <li><strong>Crash reports:</strong> Standard crash reports are collected automatically to help us find and fix app problems. They include crash details, when a problem occurred, the app version, basic device and operating-system information, and identifiers for the app installation. These reports help group errors and understand how many installations are affected.</li>
+            <li><strong>Preferences and connection information:</strong> Your device stores preferences such as appearance and notification settings, along with information that keeps you signed in. Our service providers may also process connection information, such as your internet address and basic details about requests, to operate and protect the service.</li>
+          </ul>
+        </section>
+        <section id="en-use">
+          <h3>03. How we use information</h3>
+          <p>We use information to check who can access a pharmacy, display its records, prepare and follow up supplier orders, deliver notifications, remember preferences, diagnose crashes, respond to support requests, and protect the service.</p>
+          <p>Pharma Nest does not display advertising, sell personal information, or use your information to track you across other companies’ apps or websites for advertising.</p>
+        </section>
+        <section id="en-sharing">
+          <h3>04. Who receives information</h3>
+          <ul>
+            <li><strong>Your pharmacy’s authorized staff:</strong> Information is available to users who have access to the relevant pharmacy, according to their permissions.</li>
+            <li><strong>Service providers:</strong> Providers help us operate accounts, store pharmacy records, deliver notifications, and diagnose crashes. They receive the information needed for those purposes. We require providers handling information on our behalf to apply protections consistent with this policy and applicable privacy requirements.</li>
+            <li><strong>Recipients you choose:</strong> When you export or share an order, report, image, PDF, or spreadsheet, the recipient or external app you select receives that content. Their own privacy practices apply to their handling of it.</li>
+            <li><strong>Legal and safety needs:</strong> We may disclose information when required by law or when reasonably necessary to protect the service, its users, or other people’s rights and safety.</li>
+          </ul>
+        </section>
+        <section id="en-security">
+          <h3>05. Storage and protection</h3>
+          <p>We use encrypted connections, account access controls, and protected device storage where appropriate to help safeguard information. Access to pharmacy records is restricted to authorized accounts. No method of storage or transmission can guarantee complete security.</p>
+          <p>Our service providers may store or process information in countries other than the country where you live. We require safeguards appropriate to that processing and applicable privacy requirements.</p>
+        </section>
+        <section id="en-retention">
+          <h3>06. How long we keep information</h3>
+          <p>We keep account and pharmacy information while it is needed to provide the service, support the pharmacy’s operations, protect the service, or meet applicable recordkeeping requirements. We delete information when it is no longer needed for those purposes, subject to the deletion process below.</p>
+          <p>Our crash-reporting provider normally retains crash details and related identifiers for 90 days before beginning its removal process. Removal from live systems and backups may take additional time. Other backup copies are removed through their retention cycles and are not necessarily erased immediately when a request is completed in the active service.</p>
+          <p>If information must be retained after an account deletion request, we explain the categories retained and the reason, and limit its retention to the necessary purpose.</p>
+        </section>
+        <section id="en-choices">
+          <h3>07. Your choices</h3>
+          <p>You can turn notifications off through the app or your device settings, change your preferences, and sign out. Signing out or uninstalling the app does not by itself delete your account or information held by the service.</p>
+          <p>You can contact us to request access to, correction of, or deletion of your personal information, or to ask about privacy choices and crash-report information. Where processing relies on permission you have given, you can withdraw it using the available device controls or by contacting us. We explain any effect on features that need that information.</p>
+        </section>
+        <section class="policy-deletion" id="delete-account" aria-labelledby="en-delete-title">
+          <span class="eyebrow">YOUR ACCOUNT &amp; PERSONAL INFORMATION</span>
+          <h3 id="en-delete-title">08. Request account or data deletion</h3>
+          <p>To request deletion of your Pharma Nest account and associated personal information:</p>
+          <ol>
+            <li>Email <a href="mailto:ahmednagyhero25@gmail.com?subject=Pharma%20Nest%20account%20deletion">ahmednagyhero25@gmail.com</a> with the subject <strong>Pharma Nest account deletion</strong>.</li>
+            <li>Include your account username or phone number and pharmacy name so we can identify the account. <strong>Do not send your password.</strong></li>
+            <li>We may ask for information to verify that the request is yours. Where the pharmacy manages the account, we may need to coordinate with its administrator.</li>
+            <li>We handle deletion of the account and associated personal information, explain any information that must be retained and why, and confirm completion.</li>
+          </ol>
+          <p>Shared pharmacy business records may need to remain for operational or legal recordkeeping reasons. We assess whether your personal details can be removed or separated from those records. Temporary account suspension is not a substitute for deletion. This email route can be used without reinstalling or signing in to the app.</p>
+          <a class="policy-action" href="mailto:ahmednagyhero25@gmail.com?subject=Pharma%20Nest%20account%20deletion">Email a deletion request <span aria-hidden="true">↗</span></a>
+        </section>
+        <section id="en-children">
+          <h3>09. Children’s privacy</h3>
+          <p>Pharma Nest is intended for authorized pharmacy staff and is not designed for children. If you believe a child has provided personal information to us, contact us so we can investigate and take appropriate action.</p>
+        </section>
+        <section id="en-contact">
+          <h3>10. Updates and contact</h3>
+          <p>We may update this policy when the app or our information practices change. We will publish the revised policy here with an updated effective date and provide additional notice when required.</p>
+          <p>For privacy questions, requests, or concerns, contact <strong>Pharma Nest privacy support</strong>, at <a href="mailto:ahmednagyhero25@gmail.com">ahmednagyhero25@gmail.com</a>.</p>
+          <p class="policy-date">Effective date: <time datetime="2026-10-24">24 October 2026</time></p>
+        </section>
+      </article>
+    </div>
+  </section>
 
-  <div id="arabic" class="language" lang="ar" dir="rtl">
-    <section>
-      <h2>سياسة خصوصية Pharma Nest</h2>
-      <p class="meta">تاريخ السريان: ١٥ أكتوبر ٢٠٢٦</p>
-      <p>Pharma Nest تطبيق لموظفي الصيدليات المصرح لهم لعرض بيانات العمل وإدارة طلبات التوريد. توضح هذه السياسة كيفية التعامل مع المعلومات في تطبيق أندرويد وiOS.</p>
-    </section>
-    <section>
-      <h2>المعلومات التي نتعامل معها</h2>
-      <ul>
-        <li><strong>بيانات الحساب:</strong> رقم الهاتف المرتبط بالحساب المُعدّ لك، وكلمة المرور عند تسجيل الدخول، ومعرّف الحساب، والصيدلية المرتبطة به. يحوّل التطبيق رقم الهاتف إلى معرّف داخلي لتسجيل الدخول عبر Supabase Authentication. تُرسل كلمة المرور إلى خدمة المصادقة للتحقق منها.</li>
-        <li><strong>بيانات الصيدلية:</strong> المخزون ودفعات الصلاحية، والموردون، والورديات، وفواتير البيع والشراء، وتقارير المبيعات، وطلبات التوريد. قد تتضمن الطلبات رقم هاتف المستلم الاختياري، وبيانات المورد والأصناف والكميات، ومواعيد المتابعة، وملاحظات الاستلام، ومعرّف الموظف الذي أنشأها. تأتي بعض السجلات من نظام الصيدلية الحالي وتُزامن مع الخدمة التي يستخدمها التطبيق.</li>
-        <li><strong>الإشعارات:</strong> عند تفعيلها، يحصل التطبيق على رمز إشعارات الجهاز ويخزنه مع حسابك وصيدليتك ونوع الجهاز لإرسال الإشعارات ذات الصلة. يُحفظ سر تسجيل الرمز في التخزين الآمن على الجهاز لإلغائه لاحقًا. تعالج خدمة Google Firebase Cloud Messaging وخدمة إشعارات نظام الجهاز بيانات التسليم.</li>
-        <li><strong>تفضيلات الجهاز والبيانات التقنية:</strong> تُحفظ تفضيلات المظهر والإشعارات على جهازك، وكذلك جلسة تسجيل الدخول وبيانات تسجيل الإشعارات. قد يعالج مزودو الشبكة والخدمات بيانات تقنية مثل عنوان IP ومعرّفات الجهاز وبيانات الطلب اللازمة لتشغيل الخدمة وحمايتها.</li>
-      </ul>
-    </section>
-    <section>
-      <h2>كيفية استخدام المعلومات</h2>
-      <p>نستخدم المعلومات للتحقق من هوية موظفي الصيدلية وصلاحياتهم، وعرض سجلات الصيدلية، وإنشاء طلبات التوريد وإدارتها، وإرسال الإشعارات المطلوبة، وحماية الخدمة، ومعالجة المشكلات، وتشغيل التطبيق. لا يتضمن التطبيق حاليًا إعلانات أو أدوات تحليلات خارجية، ولا نبيع المعلومات الشخصية.</p>
-    </section>
-    <section>
-      <h2>مزودو الخدمة والمشاركة</h2>
-      <p>توفر Supabase خدمات المصادقة وقاعدة البيانات. وتدعم Google Firebase Cloud Messaging، مع بنية إشعارات Apple أو Android، إرسال الإشعارات. يعالج هؤلاء المزودون البيانات اللازمة لهذه الخدمات. تتاح بيانات الصيدلية للموظفين المصرح لهم في الصيدلية المعنية وفقًا لضوابط الوصول.</p>
-      <p>عندما تختار تصدير طلب ومشاركته بصيغة PDF أو جدول بيانات، يفتح التطبيق قائمة المشاركة في جهازك. يتلقى المستلم أو التطبيق الذي تختاره المعلومات التي تشاركها، وتخضع لسياسة خصوصيته. وقد نفصح عن معلومات إذا تطلب القانون ذلك أو لحماية الخدمة ومستخدميها.</p>
-    </section>
-    <section>
-      <h2>التخزين والأمان والاحتفاظ</h2>
-      <p>تستخدم اتصالات التطبيق مع Supabase بروتوكول HTTPS. يُقيّد الوصول إلى سجلات الصيدلية بحسب الحساب المُسجّل وعضويته في الصيدلية. تُحفظ أسرار تسجيل الإشعارات في التخزين الآمن على الجهاز. ولا يوجد نظام آمن بصورة مطلقة.</p>
-      <p>نحتفظ ببيانات الحساب والصيدلية ما دامت لازمة لتشغيل الخدمة والوفاء بمتطلبات حفظ السجلات المعمول بها. يُلغى تسجيل الإشعارات عند تعطيلها أو تسجيل الخروج، بحسب توفر الاتصال، وقد يحذف الخادم التسجيلات غير النشطة. قد يستغرق حذف البيانات من النسخ الاحتياطية حتى نهاية دورة الاحتفاظ بها. تختلف مدة الاحتفاظ بحسب احتياجات الصيدلية والمتطلبات القانونية.</p>
-    </section>
-    <section>
-      <h2>خياراتك وطلباتك</h2>
-      <p>يمكنك إيقاف الإشعارات من إعدادات التطبيق أو الجهاز، كما يمكنك تسجيل الخروج. تُعد الحسابات لموظفي الصيدلية المصرح لهم ولا يتيح التطبيق التسجيل العام. لطلب الاطلاع على حسابك أو معلوماتك الشخصية، أو تصحيحها، أو حذفها، راسل <a href="mailto:ahmednagyhero25@gmail.com" dir="ltr">ahmednagyhero25@gmail.com</a>. اذكر رقم الهاتف المرتبط بحسابك دون إرسال كلمة المرور. سنتحقق من الطلب ونتعامل معه وفق المتطلبات القانونية ومتطلبات حفظ سجلات الصيدلية. وإذا كانت الصيدلية تدير الحساب فقد نحتاج إلى التنسيق مع مسؤولها.</p>
-    </section>
-    <section>
-      <h2>الأطفال والتحديثات والتواصل</h2>
-      <p>التطبيق مخصص لموظفي الصيدليات المصرح لهم وليس للأطفال. قد نحدّث هذه السياسة عند تغير التطبيق أو طريقة التعامل مع البيانات، وسنحدّث تاريخ السريان أعلاه. للاستفسارات والطلبات المتعلقة بالخصوصية، تواصل مع Pharma Nest عبر <a href="mailto:ahmednagyhero25@gmail.com" dir="ltr">ahmednagyhero25@gmail.com</a>.</p>
-    </section>
-  </div>
+  <section class="container policy-language" id="arabic" lang="ar" dir="rtl" aria-labelledby="arabic-title">
+    <div class="policy-language-heading"><div><span class="eyebrow">العربية</span><h2 id="arabic-title">سياسة خصوصية <bdi>Pharma Nest</bdi></h2></div><a href="#english" lang="en" dir="ltr">Read in English <span aria-hidden="true">↑</span></a></div>
+    <div class="policy-grid">
+      <aside class="policy-toc" aria-label="محتويات سياسة الخصوصية بالعربية">
+        <p>محتويات الصفحة</p>
+        <ol>
+          <li><a href="#ar-about">عن هذه السياسة</a></li>
+          <li><a href="#ar-information">المعلومات التي نتعامل معها</a></li>
+          <li><a href="#ar-use">كيف نستخدم المعلومات</a></li>
+          <li><a href="#ar-sharing">من يتلقى المعلومات</a></li>
+          <li><a href="#ar-security">التخزين والحماية</a></li>
+          <li><a href="#ar-retention">مدة الاحتفاظ بالمعلومات</a></li>
+          <li><a href="#ar-choices">خياراتك</a></li>
+          <li><a class="policy-delete-link" href="#delete-account-ar">حذف الحساب والبيانات</a></li>
+          <li><a href="#ar-children">خصوصية الأطفال</a></li>
+          <li><a href="#ar-contact">التحديثات والتواصل</a></li>
+        </ol>
+      </aside>
+      <article class="policy-paper" aria-labelledby="arabic-title">
+        <section id="ar-about">
+          <h3>٠١. عن هذه السياسة</h3>
+          <p>تطبيق <bdi>Pharma Nest</bdi> مخصص لموظفي الصيدليات المصرح لهم للاطلاع على أعمال الصيدلية وإدارة طلبات الموردين. توضح هذه السياسة كيفية التعامل مع المعلومات في تطبيقي أندرويد وآيفون والخدمات التي تدعمهما.</p>
+          <p>تُجهّز الحسابات للمستخدمين المصرح لهم، ولا يتيح التطبيق إنشاء الحسابات للعامة. قد نحصل على المعلومات منك، أو من مسؤول صيدليتك، أو من سجلات العمل الموجودة لدى الصيدلية.</p>
+        </section>
+        <section id="ar-information">
+          <h3>٠٢. المعلومات التي نتعامل معها</h3>
+          <ul>
+            <li><strong>بيانات الحساب:</strong> اسم المستخدم أو رقم الهاتف، وبيانات تسجيل الدخول، ومعرّف الحساب، والصيدلية المرتبطة به. تُستخدم كلمة المرور للتحقق من تسجيل دخولك.</li>
+            <li><strong>سجلات الصيدلية:</strong> المخزون وتواريخ الصلاحية، والموردون، والشفتات، وفواتير البيع والشراء، والتقارير، وطلبات الموردين. قد تشمل الطلبات الكميات ورقم هاتف مستلم اختياريًا ومواعيد الوصول المتوقعة وملاحظات الاستلام والموظف الذي أنشأ الطلب أو أرسله. وقد تُنقل السجلات من النظام الحالي للصيدلية.</li>
+            <li><strong>بيانات الإشعارات:</strong> عند تفعيل الإشعارات، تُربط معلومات تميّز نسخة التطبيق المثبّتة ونوع نظام الجهاز بحسابك وصيدليتك، حتى تصل الرسائل ذات الصلة إلى جهازك.</li>
+            <li><strong>تقارير الأعطال:</strong> تُجمع تقارير الأعطال المعتادة تلقائيًا لمساعدتنا على اكتشاف مشكلات التطبيق وإصلاحها. تشمل تفاصيل العطل ووقت حدوثه وإصدار التطبيق ومعلومات أساسية عن الجهاز ونظام تشغيله ومعرّفات نسخة التطبيق المثبّتة. تساعد هذه التقارير على تجميع الأخطاء ومعرفة عدد نسخ التطبيق المتأثرة.</li>
+            <li><strong>التفضيلات وبيانات الاتصال:</strong> يحفظ جهازك تفضيلات مثل المظهر وإعدادات الإشعارات، ومعلومات استمرار تسجيل الدخول. وقد يعالج مزودو الخدمة بيانات اتصال، مثل عنوان اتصالك بالإنترنت ومعلومات أساسية عن الطلبات، لتشغيل الخدمة وحمايتها.</li>
+          </ul>
+        </section>
+        <section id="ar-use">
+          <h3>٠٣. كيف نستخدم المعلومات</h3>
+          <p>نستخدم المعلومات للتحقق ممن يمكنه الوصول إلى بيانات الصيدلية، وعرض سجلاتها، وتجهيز طلبات الموردين ومتابعتها، وإرسال الإشعارات، وحفظ التفضيلات، وتشخيص الأعطال، والرد على طلبات الدعم، وحماية الخدمة.</p>
+          <p>لا يعرض <bdi>Pharma Nest</bdi> إعلانات، ولا يبيع المعلومات الشخصية، ولا يستخدم معلوماتك لتتبّعك عبر تطبيقات أو مواقع شركات أخرى لأغراض إعلانية.</p>
+        </section>
+        <section id="ar-sharing">
+          <h3>٠٤. من يتلقى المعلومات</h3>
+          <ul>
+            <li><strong>موظفو صيدليتك المصرح لهم:</strong> تتاح المعلومات للمستخدمين الذين لديهم صلاحية الوصول إلى الصيدلية المعنية، بحسب صلاحياتهم.</li>
+            <li><strong>مزودو الخدمة:</strong> يساعدنا مزودون على تشغيل الحسابات وحفظ سجلات الصيدلية وإرسال الإشعارات وتشخيص الأعطال. يتلقون المعلومات اللازمة لهذه الأغراض. ونُلزم المزودين الذين يعالجون المعلومات نيابةً عنا بتطبيق وسائل حماية تتوافق مع هذه السياسة ومتطلبات الخصوصية المعمول بها.</li>
+            <li><strong>المستلمون الذين تختارهم:</strong> عندما تصدّر أو تشارك طلبًا أو تقريرًا أو صورة أو ملف PDF أو جدول بيانات، يتلقى المستلم أو التطبيق الخارجي الذي تختاره هذا المحتوى. وتخضع طريقة تعامله معه لممارسات الخصوصية الخاصة به.</li>
+            <li><strong>المتطلبات القانونية والسلامة:</strong> قد نفصح عن المعلومات إذا تطلب القانون ذلك، أو عند الضرورة المعقولة لحماية الخدمة ومستخدميها أو حقوق الآخرين وسلامتهم.</li>
+          </ul>
+        </section>
+        <section id="ar-security">
+          <h3>٠٥. التخزين والحماية</h3>
+          <p>نستخدم اتصالات مشفّرة وضوابط للوصول إلى الحسابات وتخزينًا محميًا على الجهاز عند الاقتضاء للمساعدة على حماية المعلومات. ويقتصر الوصول إلى سجلات الصيدلية على الحسابات المصرح لها. ولا يمكن لأي وسيلة تخزين أو نقل أن تضمن أمانًا كاملًا.</p>
+          <p>قد يحفظ مزودو الخدمة المعلومات أو يعالجونها في دول غير الدولة التي تقيم فيها. ونُلزمهم بوسائل حماية مناسبة لهذه المعالجة ولمتطلبات الخصوصية المعمول بها.</p>
+        </section>
+        <section id="ar-retention">
+          <h3>٠٦. مدة الاحتفاظ بالمعلومات</h3>
+          <p>نحتفظ بمعلومات الحساب والصيدلية ما دامت لازمة لتقديم الخدمة أو دعم أعمال الصيدلية أو حماية الخدمة أو الوفاء بمتطلبات حفظ السجلات المعمول بها. ونحذف المعلومات عندما تنتفي الحاجة إليها لهذه الأغراض، مع مراعاة إجراءات الحذف الموضحة أدناه.</p>
+          <p>يحتفظ مزود تقارير الأعطال عادةً بتفاصيل الأعطال والمعرّفات المرتبطة بها لمدة ٩٠ يومًا قبل بدء إجراءات إزالتها. وقد تستغرق الإزالة من الأنظمة والنسخ الاحتياطية وقتًا إضافيًا. وتُحذف النسخ الاحتياطية الأخرى وفق دورات الاحتفاظ بها، ولا تُمحى بالضرورة فور إتمام الطلب في الخدمة النشطة.</p>
+          <p>إذا لزم الاحتفاظ بمعلومات بعد طلب حذف الحساب، نوضح أنواع المعلومات المحتفَظ بها وسبب ذلك، ونقصر الاحتفاظ بها على الغرض الضروري.</p>
+        </section>
+        <section id="ar-choices">
+          <h3>٠٧. خياراتك</h3>
+          <p>يمكنك إيقاف الإشعارات من التطبيق أو إعدادات جهازك، وتغيير تفضيلاتك، وتسجيل الخروج. لا يؤدي تسجيل الخروج أو إزالة التطبيق وحده إلى حذف حسابك أو المعلومات المحفوظة لدى الخدمة.</p>
+          <p>يمكنك التواصل معنا لطلب الاطلاع على معلوماتك الشخصية أو تصحيحها أو حذفها، أو للاستفسار عن خيارات الخصوصية وبيانات تقارير الأعطال. وعندما تعتمد المعالجة على إذن منحته، يمكنك سحبه من أدوات التحكم المتاحة في الجهاز أو بالتواصل معنا. وسنوضح أثر ذلك على الميزات التي تحتاج إلى هذه المعلومات.</p>
+        </section>
+        <section class="policy-deletion" id="delete-account-ar" aria-labelledby="ar-delete-title">
+          <span class="eyebrow">حسابك ومعلوماتك الشخصية</span>
+          <h3 id="ar-delete-title">٠٨. طلب حذف الحساب أو البيانات</h3>
+          <p>لطلب حذف حسابك في <bdi>Pharma Nest</bdi> والمعلومات الشخصية المرتبطة به:</p>
+          <ol>
+            <li>أرسل رسالة إلى <a href="mailto:ahmednagyhero25@gmail.com?subject=%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%20Pharma%20Nest" dir="ltr">ahmednagyhero25@gmail.com</a> بعنوان <strong>طلب حذف حساب Pharma Nest</strong>.</li>
+            <li>اذكر اسم المستخدم أو رقم الهاتف المرتبط بالحساب واسم الصيدلية حتى نتمكن من تحديد الحساب. <strong>لا ترسل كلمة المرور.</strong></li>
+            <li>قد نطلب معلومات للتحقق من أن الطلب صادر منك. وإذا كانت الصيدلية تدير الحساب فقد نحتاج إلى التنسيق مع مسؤولها.</li>
+            <li>نتولى حذف الحساب والمعلومات الشخصية المرتبطة به، ونوضح أي معلومات يلزم الاحتفاظ بها وسبب ذلك، ونؤكد لك إتمام الإجراء.</li>
+          </ol>
+          <p>قد يلزم الاحتفاظ بسجلات العمل المشتركة للصيدلية لأسباب تشغيلية أو لمتطلبات حفظ السجلات القانونية. ونراجع إمكانية إزالة بياناتك الشخصية منها أو فصلها عن هذه السجلات. ولا يُعد تعليق الحساب مؤقتًا بديلًا عن حذفه. يمكنك استخدام البريد لطلب الحذف دون إعادة تثبيت التطبيق أو تسجيل الدخول إليه.</p>
+          <a class="policy-action" href="mailto:ahmednagyhero25@gmail.com?subject=%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%AD%D8%B3%D8%A7%D8%A8%20Pharma%20Nest">أرسل طلب الحذف بالبريد <span aria-hidden="true">↖</span></a>
+        </section>
+        <section id="ar-children">
+          <h3>٠٩. خصوصية الأطفال</h3>
+          <p>التطبيق مخصص لموظفي الصيدليات المصرح لهم وغير مصمم للأطفال. إذا كنت تعتقد أن طفلًا قد قدّم لنا معلومات شخصية، يُرجى التواصل معنا حتى نتحقق ونتخذ الإجراء المناسب.</p>
+        </section>
+        <section id="ar-contact">
+          <h3>١٠. التحديثات والتواصل</h3>
+          <p>قد نحدّث هذه السياسة عند تغير التطبيق أو ممارسات التعامل مع المعلومات. وسننشر النسخة المحدّثة هنا مع تعديل تاريخ السريان، ونقدّم إشعارًا إضافيًا عندما يكون ذلك مطلوبًا.</p>
+          <p>للاستفسارات أو الطلبات أو المخاوف المتعلقة بالخصوصية، تواصل مع <strong>دعم الخصوصية في Pharma Nest</strong> عبر <a href="mailto:ahmednagyhero25@gmail.com" dir="ltr">ahmednagyhero25@gmail.com</a>.</p>
+          <p class="policy-date">تاريخ السريان: <time datetime="2026-10-24">٢٤ أكتوبر ٢٠٢٦</time></p>
+        </section>
+      </article>
+    </div>
+  </section>
 </main>
+<footer class="policy-footer"><div class="container"><a class="brand" href="index.html"><img src="assets/logo.png" width="34" height="34" alt=""><span dir="ltr">Pharma Nest<span class="brand-dot">.</span></span></a><p>© 2026 Pharma Nest</p><a href="mailto:ahmednagyhero25@gmail.com">Privacy contact</a></div></footer>
 </body>
 </html>

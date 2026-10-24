@@ -17,7 +17,8 @@ Open http://127.0.0.1:8080. You can also open `index.html` directly.
 - Copy: `index.html`; styling and responsive layouts: `styles.css`.
 - WhatsApp number, trial message, and store links: `SITE_CONFIG` in `script.js`.
 - Upload the contents of this directory to any static host. No backend needed.
-- `privacy-policy.html` is copied from the existing project's policy; review both copies together if the policy changes.
+- `privacy-policy.html` is the English/Arabic app privacy policy, dated 24 October 2026. It uses shared `styles.css` and scoped `privacy.css`, without JavaScript. Keep its filename and the homepage footer link unchanged.
+- Review [PRIVACY-READINESS.md](PRIVACY-READINESS.md) before store submission. The older policy in the mobile-app repository is not automatically synchronized by this project.
 - The main page uses five user-supplied Android screenshots as responsive WebP variants in `assets/screens/*-private*-{480,840}.webp`: home, reports, inventory search, shifts, and daily sales. Each was edited with the built-in image editing tool to strongly blur only the pharmacy-name header. Never copy the unredacted originals into this public folder. Values are captured screenshot data, not live data.
 - Edit prompt used per screenshot: apply a strong privacy Gaussian blur to the entire pharmacy-name line in the top header; preserve the logo, sync timestamp, all other app content and full portrait composition. The source screenshots were supplied in chat on 2026-10-23. The shifts image uses the later replacement screenshot (10:06), with its full heading and the highest-cash tab selected.
 - Unused App Store images and superseded PNG screenshots have been removed. The original attachments and generated edit outputs remain outside this repository.
